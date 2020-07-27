@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img style="width: 100px" src="http://lapergolarestaurante.com/assets/img/logo_principal.png">
+        <h1 style="text-align: center">🍲🍽️ Su reserva a sido concretada 🍽️🍲</h1>
+        <p>Hola ${user.name}</p>
+        <p>
+            ¡Gracias por tu pedido! <br>
+            En estos momentos tu reserva sea completetado, gracias por elegir Chifa Chau Fan.<br>
+            <strong>Fecha y Hora de Registro:</strong><br> ${user.fechaRegistro}
+        </p>
+        <table class="text-uppercase">
+        <thead>
+        <tr>
+            <th colspan="2">DETALLE DE RESERVA</th>
+        </tr>
+        <tr>
+            <td>
+            <strong>Fecha de Reserva</strong:>&nbsp; ${user.fecha} <br>
+            <strong>De:</strong>&nbsp;${user.horaInicio}&nbsp;a&nbsp;${user.horaFin}
+            </td>
+            <td>
+            <strong>Mesa</strong>: ${user.mesa}
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td style="text-align: center">Imagen</td>
+            <td style="text-align: center">Cantidad</td>
+            <td style="text-align: center">Producto</td>
+            <td style="text-align: center">Precio Unitario</td>
+            <td style="text-align: center">Sub Total</td>
+        </tr>
+        `+ vista +
+        `
+        </tbody>
+        <tfoot>
+        <tr>
+            <th colspan="2"></th>
+            <th colspan="2">Sub total</th>
+            <td style="text-align: center" class="text-danger">${user.subtotal}</td>
+        </tr>
+        <tr>
+            <th colspan="2"></th>
+            <th colspan="2">Descuento</th>
+            <td style="text-align: center">${user.descuento}</td>
+        </tr>
+        <tr class="text-danger text-bold">
+            <th colspan="2"></th>
+            <th colspan="2">Total</th>
+            <td style="text-align: center">${user.total}</td>
+        </tr>
+        </tfoot>
+        </table>
+        <img src="http://127.0.0.1:8080/static/qrs/1.png">
+        <p>
+            Contactenos <br>
+            Celular: 964050503 <br>
+            Ubicación: Paseo la breña N° 527 - Huancayo <br>
+            correo: <span class="text-primary">chifachaufan@gmail.com</span>
+        </p>
+        <p>Los esperamos en La Pergola Restaurante.</p>`
+</body>
+</html>
